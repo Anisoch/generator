@@ -11,7 +11,7 @@ This module creates dictionaries:
 # разрешение экрана
 # screen resolution
 res_x = 800
-res_y = 800
+res_y = 600
 
 # размер квадрата
 # square side
@@ -20,8 +20,8 @@ side = 50
 # основные цвета
 # basic colurs
 BLACK = (0,0,0)
-WHITE = (255,255,255)
-BLUE = (0,0,150)
+WHITE = (200,200,200)
+BLUE = (0,50,150)
 
 # создаем список всех координат 'x'
 # creating a list of all 'x' coordinates
@@ -51,8 +51,8 @@ for x in x_coordinates:
 # переводим список в словарь (номер : ЦВЕТ, ('x','y'))
 # turnig a list in a dictionary (number : COLOUR, ('x','y'))
 d_square_coordinates = {
-	i : (BLUE, 
-		(square_coordinates[i][0],square_coordinates[i][1], side, side))
+	i : [BLUE, 
+		(square_coordinates[i][0],square_coordinates[i][1], side, side)]
 	for i in range(0,len(square_coordinates))
 						}
 

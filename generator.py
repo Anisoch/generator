@@ -11,11 +11,11 @@ This module creates dictionaries:
 # разрешение экрана
 # screen resolution
 res_x = 800
-res_y = 600
+res_y = 400
 
 # размер квадрата
 # square side
-side = 50
+side = 10
 
 # основные цвета
 # basic colurs
